@@ -1,0 +1,127 @@
+# Entorno Virtual
+venv_transformers/
+.venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Modelos y checkpoints de ML
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.tflite
+*.pkl
+*.joblib
+modelo/
+models/
+checkpoints/
+cache/
+.cache/
+
+# Hugging Face
+.huggingface/
+transformers_cache/
+
+# Datos grandes
+*.csv
+*.json
+*.parquet
+*.feather
+*.pkl.gz
+data/
+datasets/
+# Excepto el archivo CSV específico del proyecto
+!Scraped_Car_Review_dodge.csv
+
+# Logs y debugging
+*.log
+.logs/
+logs/
+
+# IDE y Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema Operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Variables de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Tensorboard
+runs/
+logs/
+lightning_logs/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Configuraciones locales
+config.ini
+settings.json
