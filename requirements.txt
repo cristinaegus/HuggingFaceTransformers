@@ -1,8 +1,9 @@
 # Requisitos para el entorno de Hugging Face Transformers
+# NOTA: TensorFlow deshabilitado por problemas de compatibilidad en Windows
 transformers>=4.53.2
 torch>=2.7.1
-tensorflow>=2.19.0
-numpy>=2.1.3
+# tensorflow-cpu==2.16.1  # Comentado por problemas de DLL en Windows
+numpy==1.26.4
 pandas>=2.3.1
 matplotlib>=3.10.3
 seaborn>=0.13.2
@@ -16,3 +17,8 @@ tqdm>=4.67.1
 safetensors>=0.5.3
 tokenizers>=0.21.2
 huggingface-hub>=0.33.4
+
+# Para TensorFlow en Windows, considerar:
+# - Google Colab
+# - WSL (Windows Subsystem for Linux)  
+# - Docker con imagen de TensorFlow

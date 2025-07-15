@@ -74,3 +74,25 @@ pip install -r requirements.txt
 # Registrar como kernel de Jupyter
 python -m ipykernel install --user --name=venv_transformers --display-name="Transformers HuggingFace"
 ```
+
+## ⚠️ Solución de Problemas
+
+### Error de TensorFlow en Windows
+
+Si encuentras errores relacionados con DLL de TensorFlow, este entorno está configurado para usar **solo PyTorch**:
+
+- ✅ **PyTorch**: Completamente funcional
+- ❌ **TensorFlow**: Deshabilitado por problemas de compatibilidad
+
+#### Alternativas para usar TensorFlow:
+
+1. **Google Colab** (recomendado)
+2. **WSL (Windows Subsystem for Linux)**
+3. **Docker con imagen de TensorFlow**
+
+#### Variables de entorno configuradas:
+
+```python
+os.environ['USE_TF'] = 'NO'  # Usar solo PyTorch
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'  # Deshabilitar optimizaciones oneDNN
+```
